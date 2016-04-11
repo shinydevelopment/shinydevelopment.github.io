@@ -1,0 +1,6 @@
+exclude: [ 'capfile', 'capistrano', '_masters' ]
+markdown: kramdown
+highlighter: rouge
+permalink: /blog/:title/
+gems:
+  - jekyll-redirect-from

@@ -1,0 +1,27 @@
+---
+layout: blog
+title: iPhone Developer Blog | Shiny Development
+description: iPhone Developer Blog by Dave Verwer. iPhone development and training information from Shiny Development, including technical tips and howto guides.
+permalink: /blog/
+---
+
+{% for post in site.posts limit:3 %}
+<div class="article">
+
+<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+<p class="post-meta">by {{post.author}} &bull; {{ post.date | date_to_long_string }}</p>
+
+<p>{{ post.excerpt }}</p>
+
+<p class="fancy-link"><a href="{{ post.url }}">Continue Reading</a></p>
+
+</div>
+{% endfor %}
+
+<h2>Older Posts</h2>
+
+<ul class="archive">
+{% for post in site.posts offset:3 %}
+<li><a href="{{ post.url }}">{{ post.title }}</a> &bull; <span>{{ post.date | date_to_long_string }}</span></li>
+{% endfor %}
+</ul>

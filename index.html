@@ -1,0 +1,57 @@
+---
+layout: default
+title: iPhone Training &amp; Consultancy in Chester, UK | Shiny Development
+description: Shiny Development specialise in creating compelling and innovative iPhone and iPad apps. We can also help you to turn your ideas into fully functioning apps with our iOS developer training courses.
+---
+
+<div class="container content-upper">
+  <div class="section ">
+    <h2>The iPhone &amp; iPad Experts</h2>
+    <p class="excerpt">We specialise in training you to create compelling and innovative iOS apps for the iPhone and iPad.</p>
+    <p class="excerpt">Learn from our real world experience of designing, building and marketing successful apps for these revolutionary platforms.</p>
+    </div>
+    <img src="/assets/images/ipad-iphone-ios7.png" width="430" height="480" style="PADDING-RIGHT: 35px" class="display-img" alt="Our training courses allow you to build amazing apps for the iPhone and iPad">
+</div>
+
+<div class="wrapper pattern">
+  <div class="container content-lower">
+    <div class="section section-home">
+      <h3><a href="/training/">iOS Training</a></h3>
+      <p>We can kick start your iOS development plans and teach you how to turn your app idea into a reality! Our intensive iOS training courses will quickly bring your team up to speed designing and building apps.</p>
+      <p>We can provide <a href="/in-house-iphone-training/">in-house training</a> specifically tailored to your organisation&rsquo;s requirements.</p>
+      <p>All of our courses are <a href="/blog/ios-training-courses-updated-for-ios8-and-xcode6/">fully updated for iOS 9 &amp; Xcode 7</a>.</p>
+      <p class="fancy-link"><a href="/in-house-iphone-training/">Learn more about iOS Training</a></p>
+
+      <h3><a href="/our-apps/">Our Apps</a></h3>
+      <p>We also make a range of fun and innovative apps. Learn from our experience developing by attending our training or just go and download them!</p>
+
+      <ul class="app-bar">
+        <li><a href="/status-magic/" onClick="trackOutboundLink(this, 'Status Magic Home', '/status-magic/'); return false;" title="Status Magic"><img src="/assets/icons/status-magic.png" alt="Status Magic" /></a></li>
+        <li><a href="/charades/" onClick="trackOutboundLink(this, 'Charades Home', '/charades/'); return false;" title="Charades"><img src="/assets/icons/charades.png" alt="Charades" /></a></li>
+        <li><a href="/tackle-fishing/" onClick="trackOutboundLink(this, 'Fishing Home', '/tackle-fishing/'); return false;" title="Tackle Fishing"><img src="/assets/icons/tackle-fishing.png" alt="Tackle Fishing" /></a></li>
+        <li><a href="/explore-flickr/" onClick="trackOutboundLink(this, 'Explore Flickr Home', '/explore-flickr/'); return false;" title="Explore Flickr"><img src="/assets/icons/explore-flickr.png" alt="Explore Flickr" /></a></li>
+        <li><a href="/balloons/" title="Balloons! for iPhone"><img src="/assets/icons/balloons.png" alt="Balloons! for iPhone" /></a></li>
+        <li><a href="/speakapedia" title="Speakapedia"><img src="/assets/icons/speakapedia.png" alt="Speakapedia" /></a></li>
+      </ul>
+    <h3><a href="http://iosdevweekly.com" rel="external">iOS Dev Weekly</a></h3>
+      <p>We also run <a href="http://iosdevweekly.com" onClick="trackOutboundLink(this, 'iDW Home 1', 'http://iosdevweekly.com', 'iOS Dev Weekly'); return false;">iOS Dev Weekly</a>, a <strong>free</strong> weekly email with 10 or so links to the best blog posts and articles on iOS development for the week. If you are interested in iOS development then it is likely that you will find something of interest in iOS Dev Weekly each week. <a href="http://iosdevweekly.com" onClick="trackOutboundLink(this, 'iDW Home 2', 'http://iosdevweekly.com'); return false;">You should subscribe!</a>.</p>
+    </div>
+
+    <div class="section section-blog section-blog-home">
+      {% for post in site.posts limit:1 %}
+      <div class="article">
+        <h3>Latest Blog Post: <a href="{{ post.url }}">{{ post.title }}</a></h3>
+        <p>{{ post.excerpt }}</p><p class="read-more"><a href="{{ post.url }}">Continue Reading...</a></p>
+      </div>
+      {% endfor %}
+      <h3>Older Posts</h3>
+      <ul class="archive">
+        {% for post in site.posts offset:1 limit:3 %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+
+  <br style="clear:both" />
+</div>
