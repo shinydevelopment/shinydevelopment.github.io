@@ -48,8 +48,6 @@ hr {
   background-color: #4e9e4f;
 }
 
-svg.icon {
+img.link {
   width: 15px;
-  fill: none;
-  stroke: currentcolor;
 }
